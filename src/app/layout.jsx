@@ -1,5 +1,8 @@
 import "./globals.css";
 
+// components
+import Header from "@/components/Header";
+
 export const metadata = {
   title: "گیاه لند | Giah Land",
   description: "خرید راحت گیاه، با گیاه لند! ",
@@ -8,7 +11,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <Header />
+      </body>
     </html>
   );
 }

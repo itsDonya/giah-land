@@ -8,6 +8,7 @@
 }
 
 :root {
+  direction: rtl;
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -24,4 +25,22 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: ravi;
+}
+
+@layer base {
+  .app-container {
+    @apply w-10/12 mx-auto;
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .flex-col-center {
+    @apply flex flex-col items-center justify-center;
+  }
+  .transition-200 {
+    @apply transition-all duration-200;
+  }
+  .transition-300 {
+    @apply transition-all duration-300;
+  }
 }
