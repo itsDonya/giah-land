@@ -29,7 +29,7 @@ const navItems = [
 export default function Header() {
   return (
     <header className="w-full h-24">
-      <div className="app-container h-full flex items-center justify-between">
+      <div className="app-container h-full flex items-center justify-between border-b">
         {/* right side */}
         <div className="w-full flex items-center justify-start gap-8">
           {/* logo */}

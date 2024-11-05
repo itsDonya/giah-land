@@ -1,3 +1,10 @@
+// components
+import Hero from "@/components/landing/Hero.jsx";
+
 export default function Home() {
-  return <h1 className="text-sm text-neutral-600">Body</h1>;
+  return (
+    <section className="app-container h-[calc(100vh-96px)] py-10">
+      <Hero />
+    </section>
+  );
 }
